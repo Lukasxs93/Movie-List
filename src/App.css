@@ -1,38 +1,131 @@
 .App {
-  text-align: center;
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-family: 'Poppins';
+}
+.background {
+	background-color: #000412;
+	height: 10px;
+	overflow: hidden;
+	position: relative;
+	z-index: -3;
+}
+.backgroundImg {
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
+.backgroundImg > img {
+	width: inherit;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	height: 90px;
+	align-items: center;
+	padding: 20px 20%;
+}
+.header > button {
+	border-radius: 64px;
+	padding: 0.8% 3%;
+	color: white;
+	background-color: #ff5530;
+	font-family: 'Poppins';
+}
+.loginButton:active {
+	background-color: white;
+	border: #ff5530 2px solid;
+	color: #ff5530;
+}
+bold {
+	font-weight: 700;
+}
+.title {
+	font-size: 64px;
+	padding: 0;
+	margin-bottom: 0px;
+}
+.subtitle {
+	margin-top: 0px;
+	padding: 0;
+	font-weight: 300;
+	font-size: 24px;
+}
+.searchWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.searchInput {
+	background-color: rgba(255, 255, 255, 0.15);
+	border: none;
+	width: 184px;
+	height: 52px;
+	border-radius: 64px 0px 0px 64px;
+	text-align: left;
+	padding-left: 30px;
+	color: white;
+	font-weight: 700;
+}
+.searchInput:hover {
+	border: none;
+}
+.searchInput:focus {
+	outline: #000412;
+}
+.searchButton {
+	position: relative;
+	top: 4px;
+	height: 54px;
+	width: 50px;
+	border-radius: 0px 64px 64px 0px;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.15);
+	font-size: 16px;
+	padding-right: 10px;
+	line-height: 6px;
+	color: white;
+}
+.randomButton:active {
+	background-color: white;
+	border: #ff5530 2px solid;
+	color: #ff5530;
+}
+.randomButton {
+	border-radius: 64px;
+	padding: 0.8% 3%;
+	color: white;
+	background-color: #ff5530;
+	font-family: 'Poppins';
+}
+.titleWrapper {
+	margin-top: 15%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card:hover {
+	border: solid blue 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgba(255, 255, 255, 0.2);
+	opacity: 1; /* Firefox */
+	font-weight: 400;
+	font-size: 14px;
+	font-family: 'Poppins';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: rgba(255, 255, 255, 0.2);
+	font-weight: 200;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: rgba(255, 255, 255, 0.2);
+	font-weight: 200;
 }
