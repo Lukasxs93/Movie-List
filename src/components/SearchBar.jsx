@@ -16,10 +16,10 @@ function SearchBar() {
 
    const getData =(search)=>{
     if(search!== ''){
-        fetch(`https://api.watchmode.com/v1/autocomplete-search/?apiKey=uwW5MdNaS7aIezcu6UaMANkRibzIUF4bFZxpdBGp&search_value=${search}&search_type=2`)
+        fetch(`https://api.watchmode.com/v1/autocomplete-search/?apiKey=Canjq39hADEvqSkrwKTtx3aypnOL4l9yBX42k4zM&search_value=${search}&search_type=2`)
         .then(response =>response.json())
         .then(data=>{
-            console.log(data.results);
+            
             setData(data.results);
             
             

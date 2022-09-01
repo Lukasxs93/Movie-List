@@ -1,17 +1,16 @@
 import './App.css';
 import SelectedContextProvider from './context/SelectedContext';
 import PageWrapper from './components/PageWrapper';
-import hero from './assets/hero.png';
+
+import MovieContextProvider from './context/DataContext';
 function App() {
 	return (
 		<div className='App'>
-			<div className='backgroundImg'>
-				<img src={hero} />
-			</div>
 			<SelectedContextProvider>
-				<PageWrapper />
+				<MovieContextProvider>
+					<PageWrapper />
+				</MovieContextProvider>
 			</SelectedContextProvider>
-			<div className='background'></div>
 		</div>
 	);
 }

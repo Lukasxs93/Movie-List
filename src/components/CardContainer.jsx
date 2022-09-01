@@ -8,7 +8,8 @@ function CardContainer() {
     
     // console.log(data.results[0])
     return ( 
-        <div className="cardContainer"style={{display:'flex', flexWrap:'wrap', width:'100%'}}>
+        <div className='background'>
+        <div className="cardContainer"style={{margin:'0 auto',display:'flex', flexWrap:'wrap', width:'80%',justifyContent:'space-around', alignItems:'center',gap:'30px',padding:'1%'}}>
          { data !==[] ?
            data.map((data)=>(
             <div key={uuid()} style={{display:'flex'}}>
@@ -20,6 +21,7 @@ function CardContainer() {
             
            ):<></>}
         </div> 
+        </div>
     );
 }
 

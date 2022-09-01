@@ -6,15 +6,17 @@
 }
 .background {
 	background-color: #000412;
-	height: 10px;
-	overflow: hidden;
-	position: relative;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	padding-top: 200px;
+	height: auto;
 	z-index: -3;
 }
 .backgroundImg {
 	width: 100%;
 	position: fixed;
-	z-index: -1;
+	z-index: -10;
 }
 .backgroundImg > img {
 	width: inherit;
@@ -42,6 +44,7 @@
 bold {
 	font-weight: 700;
 }
+
 .title {
 	font-size: 64px;
 	padding: 0;
@@ -102,7 +105,7 @@ bold {
 	font-family: 'Poppins';
 }
 .titleWrapper {
-	margin-top: 15%;
+	margin-top: 20%;
 }
 
 .card:hover {

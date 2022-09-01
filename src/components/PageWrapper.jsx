@@ -1,50 +1,66 @@
 import CardContainer from "./CardContainer";
 import SearchBar from "./SearchBar";
-import MovieContextProvider from "../context/DataContext";
+import { MovieContext } from "../context/DataContext";
 import { useContext } from "react";
 import { SelectedContext } from "../context/SelectedContext";
 import CardSpecs from "./CardSpecs";
 import Header from "./Header";
 import RandomButton from "./RandoomButton";
-
+import hero from '../assets/hero.png';
 
 
 function PageWrapper() {
    const [select] = useContext(SelectedContext)
-  
-    return ( 
+   const [data] = useContext(MovieContext)
+
+    return ( <>
+        
         <div className="pageWrapper">
+        <div className='backgroundImg'>
+			     <img src={hero} />
+	             </div>
+       
         <Header/>
-        <MovieContextProvider>
-            
-            {select.length !== 0 ? 
-             <CardSpecs/>
+            {select.length !== 0 ?
+            <div className="background">
+                <CardSpecs/>
+            </div> 
+             
            
             
 
             :
             <div>
-                <div className="titleWrapper">
-                <h1 className="title">Find your next favourite</h1>
-                <p className="subtitle">search a <bold>movie</bold> or <bold>series</bold> to add to your watch list</p>
-                
-                  <div className="searchWrapper">
-                  <SearchBar/>
-                  <p>or</p>
-                  <RandomButton/>
+                {data.length !==0?
+                <>
+                <div className='background'></div><CardContainer/></> :
+                  <>
+                 
+                 
+                  <div className="titleWrapper">        
+                  <h1 className="title">Find your next favourite</h1>
+                  <p className="subtitle">search a <strong>movie</strong> or <strong>series</strong> to add to your watch list</p>
+                  
+                    <div className="searchWrapper">
+                    <SearchBar/>
+                    <p>or</p>
+                    <RandomButton/>
+                    </div>
                   </div>
-                </div>
-                <CardContainer/> 
+                  </>
+                }
+                
+                 
                
            </div>
                
             }
                 
                         
-        </MovieContextProvider>
+        
                 
        </div>     
-           
+       </>  
         
      );
 }
