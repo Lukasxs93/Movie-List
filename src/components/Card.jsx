@@ -19,9 +19,10 @@ function Card({img, name,id}) {
     return ( 
 
         <div className="card" id={id} onClick={handleClick} >
-            <p>{name}</p>
+            
             <Check/>
-            <img src={img} alt="" />
+            <img src={img} alt="movie poster" style={{borderRadius:'10px'}}/>
+           
             
         </div>
         

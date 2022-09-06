@@ -107,9 +107,19 @@ bold {
 .titleWrapper {
 	margin-top: 20%;
 }
+.card {
+	border-radius: 10px;
+	border: solid 2px transparent;
+	padding: 0px;
+}
+.card > img {
+	height: auto;
+	margin: 0px;
+	border: solid 4px transparent;
+}
 
-.card:hover {
-	border: solid blue 2px;
+.card > img:hover {
+	border: solid 4px orange;
 }
 
 ::placeholder {

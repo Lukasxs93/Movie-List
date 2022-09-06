@@ -4,11 +4,15 @@ import Card from './Card'
 import { v4 as uuid } from "uuid";
 
 function CardContainer() {
-    const [data] = useContext(MovieContext)
-    
+    const [data,setData] = useContext(MovieContext)
+    const handleClick=(e)=>{
+        e.preventDefault();
+        setData([]);
+    }
     // console.log(data.results[0])
     return ( 
         <div className='background'>
+         <button onClick={handleClick}>X</button>
         <div className="cardContainer"style={{margin:'0 auto',display:'flex', flexWrap:'wrap', width:'80%',justifyContent:'space-around', alignItems:'center',gap:'30px',padding:'1%'}}>
          { data !==[] ?
            data.map((data)=>(

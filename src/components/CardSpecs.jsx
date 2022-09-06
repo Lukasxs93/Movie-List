@@ -38,7 +38,7 @@ function CardSpecs() {
             <p>{current.plot_overview}</p>
             <br />
             <p>you can find it on :</p>
-            <p>{current.single_sources?.map(source=><a href={source.web_url} target='blank'><p key={source.source_id}>{source.name}</p></a>)}</p>
+            <div>{current.single_sources?.map(source=><a href={source.web_url} target='blank' key={source.source_id}><p>{source.name}</p></a>)}</div>
         </div>
         
     </div>
