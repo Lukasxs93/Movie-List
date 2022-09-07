@@ -122,6 +122,17 @@ bold {
 	border: solid 4px orange;
 }
 
+.cardSpecs {
+	display: flex;
+}
+.movieLinks {
+	list-style: none;
+}
+.plot {
+	width: 50%;
+	margin: auto;
+	padding-top: 100px;
+}
 ::placeholder {
 	/* Chrome, Firefox, Opera, Safari 10.1+ */
 	color: rgba(255, 255, 255, 0.2);

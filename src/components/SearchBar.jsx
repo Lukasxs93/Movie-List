@@ -3,6 +3,7 @@ import {MovieContext} from '../context/DataContext';
 import {CgSearch} from 'react-icons/cg'
 function SearchBar() {
     const[search, setSearch] = useState('');
+     // eslint-disable-next-line
     const [data, setData] = useContext(MovieContext)
     
     const handleChange=(e)=>{     

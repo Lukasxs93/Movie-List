@@ -22,25 +22,27 @@ function CardSpecs() {
     }).then(newData=> {setCurrent(newData)})
        
 
-       
-
+      
+     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
      
     
     return ( 
-        <div className="cardSpecs">
+        <div className="cardSpecsContainer">
+
         <button className="closeButton" onClick={handleClick}>X</button>
+        <div className="cardSpecs">
         <div>
             <h1>{current.title}</h1>
             <img src={current.backdrop} alt="Movie banner" />
         </div>
-        <div>
-            <p>{current.plot_overview}</p>
-            <br />
-            <p>you can find it on :</p>
-            <div>{current.single_sources?.map(source=><a href={source.web_url} target='blank' key={source.source_id}><p>{source.name}</p></a>)}</div>
+            <div>
+                <p className="plot">{current.plot_overview}</p>
+                <br />
+                <p>you can find it on :</p>
+                <ul className="movieLinks">{current.single_sources?.map(source=><a href={source.web_url} target='blank' key={source.source_id}><li>{source.name}</li></a>)}</ul>
+            </div>
         </div>
-        
     </div>
      );
 }

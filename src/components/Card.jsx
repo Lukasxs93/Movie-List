@@ -6,6 +6,7 @@ import Check from "./Check";
 
 
 function Card({img, name,id}) {
+     // eslint-disable-next-line 
     const [select,setSelect] = useContext(SelectedContext);
     
     const handleClick=()=>{
