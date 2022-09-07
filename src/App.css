@@ -123,7 +123,9 @@
 .card > img:hover {
 	border: solid 4px orange;
 }
-
+.cardSpecsContainer {
+	padding: 0 5%;
+}
 .cardSpecs {
 	display: flex;
 }
