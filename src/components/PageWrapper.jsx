@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { SelectedContext } from "../context/SelectedContext";
 import CardSpecs from "./CardSpecs";
 import Header from "./Header";
-import RandomButton from "./RandoomButton";
+// import RandomButton from "./RandoomButton";
 import hero from '../assets/hero.png';
 
 
@@ -43,8 +43,8 @@ function PageWrapper() {
                   
                     <div className="searchWrapper">
                     <SearchBar/>
-                    <p>or</p>
-                    <RandomButton/>
+                    {/* <p>or</p>
+                    <RandomButton/> */}
                     </div>
                   </div>
                   </>
