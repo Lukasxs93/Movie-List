@@ -46,6 +46,7 @@ function PageWrapper() {
                     {/* <p>or</p>
                     <RandomButton/> */}
                     </div>
+                    <a  className="watchmodeLink"href="https://www.watchmode.com/misc/servicesChooser/?didRedirect=1">Streaming data powered by Watchmode.com</a>
                   </div>
                   </>
                 }

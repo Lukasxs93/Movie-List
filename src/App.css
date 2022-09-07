@@ -41,9 +41,6 @@
 	border: #ff5530 2px solid;
 	color: #ff5530;
 }
-bold {
-	font-weight: 700;
-}
 
 .title {
 	font-size: 64px;
@@ -103,6 +100,11 @@ bold {
 	color: white;
 	background-color: #ff5530;
 	font-family: 'Poppins';
+}
+.watchmodeLink {
+	position: absolute;
+	bottom: 0px;
+	left: 590px;
 }
 .titleWrapper {
 	margin-top: 20%;
