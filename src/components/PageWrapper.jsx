@@ -17,7 +17,7 @@ function PageWrapper() {
         
         <div className="pageWrapper">
         <div className='backgroundImg'>
-			     <img src={hero} />
+			     <img src={hero} alt="hero image" />
 	             </div>
        
         <Header/>
