@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { MovieContext } from "../context/DataContext";
-import LoginButton from "./LoginButton";
+// import LoginButton from "./LoginButton";
 import SearchBar from "./SearchBar";
 
 function Header() {
@@ -14,7 +14,8 @@ function Header() {
                 :
            <>
            <h2>Watch List</h2>
-          <LoginButton/></>
+          {/* <LoginButton/> */}
+          </>
         
         }
         </div>
