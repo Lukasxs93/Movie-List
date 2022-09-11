@@ -31,7 +31,7 @@ function SearchBar() {
     return ( 
         <div className="searchBar">
             <form onSubmit={handleSubmit}>
-                <input type="text" onChange={handleChange} value={search} required className="searchInput" placeholder='Search Movie/Series'/>
+                <input type="text" onChange={handleChange} value={search} required className="searchInput" placeholder='Search Movie/Series' autoFocus/>
                 <button type="submit" className='searchButton'><CgSearch/></button>
             </form>
         </div>
