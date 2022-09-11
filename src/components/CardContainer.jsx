@@ -13,7 +13,7 @@ function CardContainer() {
     return ( 
         <div className='background'>
          <button onClick={handleClick}>X</button>
-        <div className="cardContainer"style={{margin:'0 auto',display:'flex', flexWrap:'wrap', width:'80%',justifyContent:'space-around', alignItems:'center',gap:'30px',padding:'1%'}}>
+        <div className="cardContainer"style={{margin:'0 auto',display:'flex',flexWrap:'wrap',height:'max-content',justifyContent:'space-around', alignItems:'center',gap:'30px'}}>
          { data !==[] ?
            data.map((data)=>(
             <div key={uuid()} style={{display:'flex'}}>
