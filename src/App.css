@@ -19,7 +19,9 @@
 	z-index: -10;
 }
 .backgroundImg > img {
-	width: inherit;
+	zoom: 45%;
+	width: max-content;
+	height: max-content;
 }
 .header {
 	display: flex;
@@ -107,7 +109,7 @@
 	margin-top: 20%;
 }
 .card {
-	border-radius: 10px;
+	border-radius: 20px;
 	border: solid 2px transparent;
 	padding: 0px;
 }
@@ -216,15 +218,14 @@
 	.card {
 		border-radius: 10px;
 		border: solid 2px transparent;
-		padding: 0px;
 	}
 	.card > img {
-		height: 50%;
+		height: 100%;
 		margin: 20px 0px;
 		border: solid 4px transparent;
 		width: max-content;
 		height: max-content;
-		border-radius: 10px;
+		border-radius: 20px;
 	}
 	.cardSpecs {
 		display: flex;

@@ -32,8 +32,9 @@ function CardSpecs() {
 
         <button className="closeButton" onClick={handleClick}>X</button>
         <div className="cardSpecs">
-        <h1>{current.title}</h1>
-        <div className="spectImageContainer">            
+        
+        <div className="spectImageContainer">  
+            <h1>{current.title}</h1>          
             <img src={current.backdrop} alt="Movie banner" />
         </div>
             <div>
