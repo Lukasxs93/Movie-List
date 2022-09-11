@@ -43,10 +43,14 @@ function PageWrapper() {
                   
                     <div className="searchWrapper">
                     <SearchBar/>
+                    
                     {/* <p>or</p>
                     <RandomButton/> */}
+                      <div className="externalApiLink">
+                        <a  className="watchmodeLink"href="https://www.watchmode.com/misc/servicesChooser/?didRedirect=1">Streaming data powered by Watchmode.com</a>
+                      </div>
                     </div>
-                    <a  className="watchmodeLink"href="https://www.watchmode.com/misc/servicesChooser/?didRedirect=1">Streaming data powered by Watchmode.com</a>
+                    
                   </div>
                   </>
                 }

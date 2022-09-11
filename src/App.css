@@ -55,6 +55,7 @@
 }
 .searchWrapper {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
@@ -101,11 +102,7 @@
 	background-color: #ff5530;
 	font-family: 'Poppins';
 }
-.watchmodeLink {
-	position: absolute;
-	bottom: 0px;
-	left: 590px;
-}
+
 .titleWrapper {
 	margin-top: 20%;
 }
@@ -137,6 +134,7 @@
 	margin: auto;
 	padding-top: 100px;
 }
+
 ::placeholder {
 	/* Chrome, Firefox, Opera, Safari 10.1+ */
 	color: rgba(255, 255, 255, 0.2);
@@ -156,4 +154,63 @@
 	/* Microsoft Edge */
 	color: rgba(255, 255, 255, 0.2);
 	font-weight: 200;
+}
+
+@media only screen and (max-width: 700px) {
+	.backgroundImg {
+		width: max-content;
+		position: fixed;
+		z-index: -10;
+	}
+	.backgroundImg > img {
+		zoom: 45%;
+		width: max-content;
+		height: max-content;
+		margin: auto;
+		position: fixed;
+		right: -1200px;
+	}
+	.searchWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
+	.searchWrapper > .externalApiLink {
+		margin-top: 100px;
+	}
+	.searchInput {
+		background-color: rgba(255, 255, 255, 0.15);
+		border: none;
+		width: 184px;
+		height: 52px;
+		border-radius: 64px 0px 0px 64px;
+		text-align: left;
+		padding-left: 30px;
+		color: white;
+		font-weight: 700;
+	}
+	.titleWrapper {
+		margin-top: 230px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 40px;
+	}
+	.title {
+		font-size: 2rem;
+		padding: 0;
+		margin-bottom: 0px;
+	}
+	.subtitle {
+		margin-top: 0px;
+		padding: 0;
+		font-weight: 300;
+		font-size: 1rem;
+	}
+	.header {
+		justify-content: center;
+		font-size: 1rem;
+	}
 }
