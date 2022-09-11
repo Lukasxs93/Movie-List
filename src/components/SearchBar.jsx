@@ -20,11 +20,13 @@ function SearchBar() {
         fetch(`https://api.watchmode.com/v1/autocomplete-search/?apiKey=Canjq39hADEvqSkrwKTtx3aypnOL4l9yBX42k4zM&search_value=${search}&search_type=2`)
         .then(response =>response.json())
         .then(data=>{
-            
+           
+        
             setData(data.results);
+           
             
             
-        })
+        }).catch(e=>{alert('movie title not found')})
 
         }
     }
