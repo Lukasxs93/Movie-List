@@ -18,6 +18,7 @@
 	position: fixed;
 	z-index: -10;
 }
+
 .backgroundImg > img {
 	zoom: 45%;
 	width: max-content;
@@ -38,12 +39,83 @@
 	background-color: #ff5530;
 	font-family: 'Poppins';
 }
+.signUpForm {
+	margin: 270px auto 20px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	width: 200px;
+}
+.signUpForm > button {
+	height: 45px;
+	width: 150px;
+	border: none;
+	border-radius: 64px;
+	color: white;
+	background-color: #ff5530;
+	font-family: 'Poppins';
+}
+.signUpForm > input {
+	background-color: rgba(255, 255, 255, 0.15);
+	border: none;
+	height: 30px;
+	border-radius: 20px;
+	padding-left: 20px;
+	color: white;
+}
 .loginButton:active {
 	background-color: white;
 	border: #ff5530 2px solid;
 	color: #ff5530;
 }
-
+.loginForm {
+	margin: 270px auto 20px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	width: 200px;
+}
+.loginForm > .textFieldInput {
+	background-color: rgba(255, 255, 255, 0.15);
+	border: none;
+	height: 30px;
+	border-radius: 20px;
+	padding-left: 20px;
+	color: white;
+}
+.loginForm > .textFieldInput:focus {
+	outline: none;
+}
+.logInButton {
+	height: 45px;
+	width: 150px;
+	border: none;
+	border-radius: 64px;
+	color: white;
+	background-color: #ff5530;
+	font-family: 'Poppins';
+}
+.logInButton:active {
+	background-color: white;
+	border: #ff5530 2px solid;
+	color: #ff5530;
+}
+.logOutBtn {
+	position: absolute;
+	right: 20px;
+	top: 35px;
+	border: none;
+	border-radius: 20px;
+	padding: 0.8% 2%;
+	color: white;
+	background-color: #ff5530;
+	font-size: 0.8rem;
+	font-family: 'Poppins';
+}
 .title {
 	font-size: 64px;
 	padding: 0;
@@ -107,7 +179,7 @@
 }
 
 .titleWrapper {
-	margin-top: 20%;
+	margin-top: 15%;
 }
 .card {
 	border-radius: 20px;
@@ -158,6 +230,10 @@
 	color: rgba(255, 255, 255, 0.2);
 	font-weight: 200;
 }
+::ms-.textFieldInput-placeholder {
+	color: rgba(255, 255, 255, 0.2);
+	font-weight: 200;
+}
 
 @media only screen and (max-width: 980px) {
 	.backgroundImg {
@@ -195,8 +271,7 @@
 	}
 	.searchButton {
 		position: relative;
-		top: -40px;
-		right: -80px;
+		top: 5px;
 		height: 30px;
 		width: 50px;
 		border-radius: 40px;
